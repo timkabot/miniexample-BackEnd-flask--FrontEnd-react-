@@ -1,0 +1,8 @@
+<div class="container">
+    <span [title]="tooltip" > {{title}} </span>
+    
+    <input [(ngModel)]="inputText" (ngModelChange) = "log()" id="mainText" size="40" maxlength="100">
+
+    <button  (click)="getTimeAndDate()"> Click to get time</button>
+    <button  (click)="getColors()"> Click to change colors</button>
+</div>
